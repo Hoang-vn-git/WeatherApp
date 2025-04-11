@@ -1,12 +1,78 @@
-# React + Vite
+# 🌤️ Weather App - React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple weather app built with React that allows users to check the current weather of any city by name.  
+It uses the **OpenWeatherMap API** to fetch real-time weather data.
 
-Currently, two official plugins are available:
+## 🔍 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Search weather by **city name**
+- Displays:
+  - 🌡️ Temperature (°C)
+  - 🌥️ Weather icon & description
+  - 💧 Humidity
+  - 🌬️ Wind speed
+- Default city loaded on app start
+- Error handling when:
+  - API key is incorrect
+  - City is not found
+  - Network issues
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React (Vite)
+- JavaScript (ES6+)
+- OpenWeatherMap API
+- CSS for styling
+
+## 📦 Installation
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/Hoang-vn-git/WeatherApp.git
+cd WeatherApp
+
+# 2. Install dependencies
+npm install
+
+# 3. Create a .env file and add your API key
+touch .env
+Paste the following into .env file:
+
+    VITE_APP_ID = your_openweathermap_api_key
+(🔑 You can get a free API key from: https://openweathermap.org/api)
+
+# 4. Start the development server
+npm run dev
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── assets/           # Weather icons
+├── components/
+│   └── Weather.jsx   # Main weather component
+    └── Weather.css   # Styles
+└── main.jsx          # React entry point
+└── App.jsx
+└── index.css    
+```
+
+## 📸 Screenshots
+
+<img width="1725" alt="Screenshot 2025-04-11 at 17 47 43" src="https://github.com/user-attachments/assets/06f621b0-1e71-49aa-a568-bc2eebc47ce1" />
+
+<img width="1725" alt="Screenshot 2025-04-11 at 17 48 03" src="https://github.com/user-attachments/assets/b8f46c69-a3d2-4dc1-9795-c767ab132408" />
+
+
+
+## 🚀 Future Improvements
+
+- Add loading spinner while fetching data
+- Support weather by current GPS location
+- Show forecast for next 5 days
+- Allow switching between °C and °F
+
+## 📝 License
+
+This project is open-source and free to use under the MIT License.
