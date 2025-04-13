@@ -62,10 +62,6 @@ src/
 
 <img width="1725" alt="Screenshot 2025-04-11 at 17 47 43" src="https://github.com/user-attachments/assets/06f621b0-1e71-49aa-a568-bc2eebc47ce1" />
 
-<img width="1725" alt="Screenshot 2025-04-11 at 17 48 03" src="https://github.com/user-attachments/assets/b8f46c69-a3d2-4dc1-9795-c767ab132408" />
-
-
-
 ## 🚀 Future Improvements
 
 - Add loading spinner while fetching data
